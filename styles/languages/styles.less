@@ -1,0 +1,24 @@
+@import "colors";
+
+.css {
+  .entity.name.tag {
+    color: @keyword;
+  }
+  .support.type.property-name {
+    color: @entity;
+  }
+  .punctuation.definition,
+  .punctuation.separator.operator,
+  .entity.other.attribute-name.pseudo-class {
+    color: lighten(@keyword, 20%);
+  }
+  .meta.selector {
+    color: lighten(@keyword, 30%);
+  }
+}
+
+.less {
+  .punctuation.definition.comment {
+    color: @comment;
+  }
+}

@@ -1,0 +1,76 @@
+// COLORS
+@blue:        rgb(109, 176, 245);
+@yellow:      rgb(253, 238, 75);
+@red:         rgb(222, 83, 121);
+@purple:      lighten(rgb(165, 103, 165), 10%);
+@teal:        rgb(46, 173, 232);
+@green:       desaturate(rgb(45, 186, 155), 10%);
+@orange:      rgb(245, 150, 81);
+@white:       #fff;
+@silver:      lighten(rgb(153, 153, 153), 10%);
+@gray:        lighten(@black, 40%);
+@dark-gray:   lighten(@black, 20%);
+@black:       darken(rgb(39, 54, 70), 15%);
+
+// GUTTER
+@gutter-text: @dark-gray;
+@gutter-text-highlight: @gray;
+@gutter-background: darken(@black, 3%);
+@gutter-background-highlight: darken(@black, 3%);
+
+// CODE VIEW
+@code-background: @black; // editor background
+@code-font: Source Code Pro;
+@code-font-color: @silver; // default editor text
+
+// SYNTAX COLORS
+@comment: lighten(@black, 14%); // comments, duhr.
+@comment-bg: none; // comments, duhr.
+@comment-punc: @comment;
+@string: lighten(@gray, 10%); // 'value' of var='value', "name.png" or src="name.png"
+@constant: @orange; // true of var x = true, {{}} of {{> hbs_include}}
+@variable: @green; // foo or function(foo), hbs_include of {{> hbs_include}}, http://dom.com/ of url(http://dom.com/)
+@support: @purple; // module of module.exports, color of color: rgb(0,0,0)
+@entity: @silver; // exports of module.exports, <div id= of <div id="#id">, . of .className
+@keyword: @gray; // = of var a = b, if of if a = b, px of font-size: 13px;
+@storage: darken(@gray, 10%); // var of var a = b;
+@meta: @code-font-color; // none of border: none;
+@function-param: @yellow;
+
+@error: @red;
+@regex: @string;
+@numeric: @orange;
+@quotes: @code-font-color;
+@markup: @code-font-color;
+@unknown: @code-font-color;
+
+// MISC COLORS
+@invisible: rgba(255,255,255,0.1);
+@guides: lighten(@code-background, 3%);
+@cursor-color: @gray;
+@cursor-width: 2px;
+@selected: darken(@dark-gray, 18%); // selected background color
+@selected-border: darken(@dark-gray, 18%);
+@selected-line: @gutter-background-highlight;
+
+// HTML
+@tag: @gray;
+@tag-entity: @blue;
+@element-attr: @teal;
+@class: @purple;
+@id: @teal;
+@block: @blue;
+@inline: lighten(@blue, 25%);
+
+@entity-function: @blue;
+@brackets: darken(@code-font-color, 30%);
+@punctuation: darken(@code-font-color, 30%);
+
+@search-bg: transparent;
+@search-border: solid 1px @blue;
+
+@search-active-bg: @blue;
+@search-active-border: solid 1px @blue;
+
+@search-item-border: @blue;
+@search-item-bg: @red;

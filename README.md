@@ -6,7 +6,9 @@ An out of this world theme composed of all the colors of the galaxy. For the cod
 
 Use `apm` to get galactic real quick
 
-  apm install galaxy-syntax
+```
+apm install galaxy-syntax
+```
 
 ## More Galaxy
 
